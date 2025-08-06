@@ -3,6 +3,9 @@ from datetime import datetime
 from src.models.content import db, ContentTemplate, GeneratedContent, ContentTopic
 from src.services.content_generator import ContentGenerator
 import json
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
 
 content_bp = Blueprint('content', __name__)
 
